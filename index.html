@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--importing stylesheets-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+
+    <script
+      src="https://kit.fontawesome.com/2e4f49f38c.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Nature Nail</title>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">Nature Nail Spa</a>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#abt">About</a></li>
+        <li><a href="#serv">Services</a></li>
+        <li><a href="#pts">Points</a></li>
+        <li><a href="#cont">Contact</a></li>
+      </ul>
+    </header>
+    <section>
+      <img src="img/cloudsback.svg" alt="clouds back" id="back" />
+      <img src="img/cloudsfront.svg" alt="clouds front" id="front" />
+      <img src="img/drawing.svg" alt="ground" />
+      <h2 id="text">Nature Nail Spa<br />1290 Richmond Road</h2>
+    </section>
+    
+    <div class="about_us" id="abt">
+      <h1>Nature Nail Spa</h1>
+      <p>Established in 2020, our nail salon provides a variety of services for you! </p>
+      <p>Our workers are skilled in hand care, foot care, waxing, and massages</p>
+      <p>We have provide a variety of colors, ensuring that you would find your match</p>
+      <h3>
+        Store Hours
+      </h3>
+      <h4>
+        Mon-Sat 9:30 AM - 7:30 PM | Sun 10:00 AM - 7:00 PM
+      </h4>
+    </div>
+
+    <div class="services" id="serv">
+      <img src="broll/img1.png" alt="img1" />
+      <h1>Popular Services</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <h3>Manicure</h3>
+            <h4>Gel</h4>
+            <h4>French Gel</h4>
+            <h4>Acrylic</h4>
+            <h4>Powder</h4>
+          </div>
+          <div class="col-sm d-none d-sm-none d-md-block">
+            <h3>Pedicure</h3>
+            <h4>Color Change</h4>
+            <h4>Gel</h4>
+            <h4>French Gel</h4>
+            <h4>Buff</h4>
+          </div>
+          <div class="col-sm d-none d-sm-none d-md-block">
+            <h3>Wax</h3>
+            <h4>Eyebrow</h4>
+            <h4>Lips</h4>
+            <h4>Legs</h4>
+            <h4>Arms</h4>
+          </div>
+        </div>
+      </div>
+      <button class="btn" onclick="location.href='/full-menu.html'">
+        Full Menu
+      </button>
+    </div>
+
+    <div class="points" id="pts">
+      <img src="broll/pattern.jpg" alt="pattern" id="pointsimg" />
+      <h1>Points system</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm" id="leftalign">
+            <h4>
+              Register for a membership for free! Every dollar you spend earns
+              you points and can be used to redeem awards!
+            </h4>
+            <h4>
+              <br>
+              5 points = 10 min Massage <br>
+              6 points = Regular Manicure <br>
+              13 points = Regular Pedicure <br>
+              17 points = Regular Pedicure + 10 min Massage <br>
+              19 points = Gel Manicure <br>
+              30 points = Package A <br>
+              39 points = Package B <br>
+            </h4> 
+          </div>
+          <div class="col-sm d-none d-sm-none d-md-block" id="card">
+            <img src="broll/pointcard.png" alt="Card" id="pointcard"/>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact" id="cont">
+      <img src="broll/img2.png" alt="img2" />
+      <h1>Contact Us</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm"> 
+            <i class="fas fa-mobile-alt cimg"></i>
+            <h3>Phone Number</h3>
+            <h4 onclick="location.href='tel:7185247873'">(718) 524-7873</h4>
+          </div>
+          <div class="col-sm d-none d-sm-none d-md-block">
+            <i class="fas fa-house-user cimg"></i>
+            <h3>Location</h3>
+            <h4 onclick="location.href='g.page/nature-nail-spa-ny-inc?share'">1290 Richmond Road</h4>
+          </div>
+          <div class="col-sm">
+            <i class="far fa-envelope cimg"></i>
+            <h3>Email</h3>
+            <h4 onclick="location.href='mailto:naturenailspainc@gmail.com'">naturenailspainc@gmail.com</h4>
+          </div>
+        </div>
+      <button class="btn m-btn" onclick="location.href='g.page/nature-nail-spa-ny-inc?share'" onmouseover="chbg('black')" onmouseout="chbg('white')">
+        <i class="fas fa-map-marker-alt" id="marker"></i>Maps
+      </button>
+      <div class="footer">
+        <p>
+          <p>© Copyright 2021 Nature Nail Spa NY Inc</p>
+          <a href="http://www.freepik.com">Vector images designed by Freepik</a>
+        </p>
+      </div>
+    </div>
+
+    <script>
+      let back = document.getElementById("back");
+      let front = document.getElementById("front");
+      let text = document.getElementById("text");
+      let card = document.getElementById("card");
+      
+      function chbg(color) {
+        document.getElementById('marker').style.color = color;
+        document.getElementById('marker').style.transition="all 0.5s";
+      }   
+
+      window.addEventListener("scroll", function () {
+        let value = window.scrollY;
+        back.style.left = value * 0.5 + "px";
+        front.style.left = -value * 0.5 + "px";
+        text.style.bottom = value * 1.25 + "px";
+      });
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 350) {
+          back.style.left = 0
+          console.log("ok")
+        }
+      });
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 2000) {
+          card.style.bottom = "0px";
+          card.style.opacity = "1";
+          card.style.transition = "all 1s";
+          console.log("we there");
+        } else {
+          card.style.bottom = "200px";
+          card.style.opacity = "0";
+          card.style.transition = "all 1s";
+        }
+      });
+    </script>
+  </body>
+</html>

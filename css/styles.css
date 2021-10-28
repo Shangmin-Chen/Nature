@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background-image: linear-gradient(#add6e0, #fff29c);
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(
+    rgba(195, 223, 247, 0.8),
+    rgba(195, 223, 247, 0)
+  );
+  z-index: 100;
+}
+
+header .logo {
+  color: slategray;
+  font-weight: 800;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li {
+  list-style: none;
+  margin-left: 20px;
+}
+
+header ul li a {
+  text-decoration: none;
+  padding: 6px 15px;
+  color: rgb(44, 78, 107);
+  border-radius: 10px;
+}
+
+header ul li a:hover,
+header ul li a.active {
+  background: rgba(240, 248, 255, 0.9);
+  color: slategray;
+  text-decoration: none;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(to top, rgb(147 183 74), rgba(147, 183, 74, 0.1));
+  z-index: 100;
+}
+
+section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#text {
+  position: absolute;
+  color: slategray;
+  white-space: nowrap;
+  font-size: 3em;
+  font-weight: 800;
+  text-align: center;
+  padding: 10px 30px;
+  background: rgba(240, 248, 255, 0.8);
+  margin-bottom: 200px;
+}
+
+.about_us {
+  position: relative;
+  padding: 100px;
+  background: rgb(147 183 74);
+}
+
+.about_us p
+{
+  color: white;
+  font-size: 1.3em;
+  padding: 10px 0;
+}
+
+.about_us h1 {
+  color: aliceblue;
+  font-size: 6em;
+  font-family: "Sacramento", cursive;
+}
+
+.about_us h3 {
+  padding-top: 2em;
+  color: blanchedalmond;
+  font-size: 200%;
+}
+
+.about_us h4
+{
+  color: white;
+  font-size: 150%;
+}
+
+.services {
+  position: relative;
+  padding: 100px;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background: black;
+}
+
+.services h1 {
+  color: blanchedalmond;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: 3em;
+  font-family: "Anton", sans-serif;
+  padding-bottom: 2em;
+}
+
+.services ul li {
+  list-style: none;
+}
+
+.services h3 {
+  color: bisque;
+  text-decoration: none;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+
+.services h4 {
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 20px 0;
+}
+
+.btn {
+  background: none;
+  padding: 10px 20px;
+  border: 1px solid white;
+  cursor: pointer;
+  color: white;
+  font-size: 1em;
+  transition: 0.5s;
+  margin-top: 5%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn:hover {
+  text-decoration: none;
+  color: black;
+  background: white;
+}
+
+.services img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+.container {
+  text-align: center;
+}
+
+.points {
+  position: relative;
+  padding: 100px;
+  width: 100%;
+  height: 100vh;
+  background: #fff29c;
+  z-index: 100;
+}
+
+#pointsimg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+.points h1 {
+  color: black;
+  font-size: 3em;
+  font-family: "Anton", sans-serif;
+  padding-bottom: 2em;
+}
+
+#leftalign {
+  text-align: left;
+}
+
+#card {
+  padding-top: 10em;
+}
+
+.contact {
+  position: relative;
+  padding: 100px;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background: black;
+  padding-bottom: 0;
+}
+
+.contact img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+.contact h1 {
+  color: blanchedalmond;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: 3em;
+  font-family: "Anton", sans-serif;
+  padding-bottom: 2em;
+}
+
+.contact h3 {
+  color: aliceblue;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.contact h4 {
+  color: antiquewhite;
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.contact h4:hover{
+  color: aliceblue;
+}
+
+.contact i {
+  color: white;
+}
+
+.m-btn {
+  margin-top: 10em;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px 50px;
+}
+
+.footer {
+  margin-top: 5em;
+}
+
+.footer p {
+  font-size: 0.8em;
+  color: white;
+}
+
+.footer a {
+  font-size: 0.8em;
+  color: white;
+}
+
+.footer a:hover {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+#marker {
+  padding-right: 0.5em;
+  right: 10px;
+  padding-top: 2px;
+}
+
+.cimg {
+  font-size: 2em;
+  padding-top: 1em;
+  padding-bottom: 2em;
+}
+
+#pointcard
+{
+  height: 100%;
+  width: 100%;
+}
